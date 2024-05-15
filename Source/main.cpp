@@ -5,6 +5,7 @@
 
 const int TOTAL_POINTS = 10000000; // Общее количество случайных точек
 
+
 int main() {
     setlocale(LC_ALL,"RU");
     // Измерение времени выполнения
