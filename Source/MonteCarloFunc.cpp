@@ -1,7 +1,6 @@
 ﻿#include "../Include/MonteCarloFunc.h"
 
 int pointsInsideCircle = 0;
-std::mutex pointsMutex; // Определение мьютекса
 
 double generateRandomNumber(double min, double max) {
     static std::random_device rd;
@@ -19,7 +18,6 @@ void monteCarloPi(int threadID, int totalPoints) {
             pointsInside++;
         }
     }
-    std::lock_guard<std::mutex> guard(pointsMutex); // Блокировка мьютекса
     pointsInsideCircle += pointsInside;
 }
 

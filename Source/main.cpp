@@ -3,7 +3,7 @@
 #include <iomanip>
 #include "../Include/MonteCarloFunc.h"
 
-const int TOTAL_POINTS = 100000000; // Общее количество случайных точек
+const int TOTAL_POINTS = 10000000; // Общее количество случайных точек
 
 int main() {
     setlocale(LC_ALL,"RU");
