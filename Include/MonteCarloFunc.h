@@ -3,8 +3,11 @@
 
 #include <random>
 #include <thread>
+#include <mutex>
 
 extern int pointsInsideCircle;
+extern std::mutex pointsMutex; // ќбъ€вление мьютекса
+
 
 double generateRandomNumber(double min, double max);
 void monteCarloPi(int threadID, int totalPoints);
